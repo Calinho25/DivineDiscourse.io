@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Feedback | Divine Discourse</title>
+    <meta
+      name="description"
+      content="Share early feedback on Divine Discourse, a Catholic apologetics training app."
+    />
+    <link rel="icon" href="assets/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="feedback-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Divine Discourse home">
+        <img src="assets/icon.png" alt="" />
+        <span>Divine Discourse</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#for-groups">For groups</a>
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=app.divinediscourse.mobile">Get the app</a>
+      </nav>
+    </header>
+
+    <main class="feedback-main">
+      <section class="feedback-intro">
+        <p class="eyebrow">Early user feedback</p>
+        <h1>Help shape Divine Discourse.</h1>
+        <p>
+          Try one sparring round, then tell us what felt useful, confusing, or worth improving. Short, honest answers are most helpful.
+        </p>
+      </section>
+
+      <form
+        class="feedback-form"
+        action="https://formsubmit.co/whitelioncreationsio@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="Divine Discourse feedback" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://calinho25.github.io/DivineDiscourse.io/thanks.html" />
+
+        <label>
+          <span>Your name</span>
+          <input name="name" autocomplete="name" placeholder="Optional" />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" autocomplete="email" placeholder="Optional, if you want a reply" />
+        </label>
+
+        <label>
+          <span>Your background</span>
+          <select name="background" required>
+            <option value="">Choose one</option>
+            <option>Practicing Catholic</option>
+            <option>Christian, non-Catholic</option>
+            <option>Clergy or ministry leader</option>
+            <option>Student</option>
+            <option>Curious or skeptical</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <label>
+          <span>What did you use it for?</span>
+          <select name="use_case" required>
+            <option value="">Choose one</option>
+            <option>Personal apologetics practice</option>
+            <option>Youth group or study group idea</option>
+            <option>Class or catechesis</option>
+            <option>General curiosity</option>
+          </select>
+        </label>
+
+        <label>
+          <span>How useful was your first round?</span>
+          <select name="usefulness" required>
+            <option value="">Choose one</option>
+            <option>Very useful</option>
+            <option>Somewhat useful</option>
+            <option>Not sure yet</option>
+            <option>Not useful</option>
+          </select>
+        </label>
+
+        <label>
+          <span>What should be improved?</span>
+          <textarea name="improvements" rows="5" required placeholder="Tell us what confused you, what felt missing, or what would make you come back weekly."></textarea>
+        </label>
+
+        <label>
+          <span>What objections or opponents should be added?</span>
+          <textarea name="requested_content" rows="4" placeholder="Example: more Protestant objections, moral theology questions, atheist objections, Islam-focused prompts..."></textarea>
+        </label>
+
+        <label>
+          <span>Would you recommend it?</span>
+          <select name="recommendation" required>
+            <option value="">Choose one</option>
+            <option>Yes</option>
+            <option>Maybe, after improvements</option>
+            <option>No</option>
+          </select>
+        </label>
+
+        <button class="button primary" type="submit">Send feedback</button>
+        <p class="form-note">
+          The first submission may require email confirmation to activate the inbox. After that, responses will go directly to White Lion Creations.
+        </p>
+      </form>
+    </main>
+  </body>
+</html>

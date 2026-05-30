@@ -354,6 +354,13 @@ h1 {
   margin-top: 16px;
 }
 
+.final-cta .button.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: #fff;
+  margin-left: 10px;
+  margin-top: 16px;
+}
+
 footer {
   align-items: center;
   background: var(--navy);
@@ -374,6 +381,111 @@ footer a {
   font-weight: 800;
 }
 
+.feedback-page {
+  background:
+    radial-gradient(circle at 12% 10%, rgba(199, 151, 57, 0.18), transparent 34%),
+    var(--paper);
+}
+
+.feedback-main {
+  display: grid;
+  gap: clamp(28px, 6vw, 76px);
+  grid-template-columns: minmax(0, 0.82fr) minmax(320px, 1fr);
+  padding: clamp(44px, 7vw, 92px) clamp(20px, 6vw, 88px);
+}
+
+.feedback-intro {
+  max-width: 620px;
+}
+
+.feedback-intro h1,
+.thanks-main h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.92;
+}
+
+.feedback-intro p,
+.thanks-main p {
+  color: var(--muted);
+  font-size: 1.12rem;
+  line-height: 1.72;
+}
+
+.feedback-form {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 18px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+.feedback-form label {
+  display: grid;
+  gap: 8px;
+}
+
+.feedback-form span {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+  appearance: none;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--ink);
+  font: inherit;
+  min-height: 48px;
+  padding: 12px 14px;
+  width: 100%;
+}
+
+.feedback-form textarea {
+  line-height: 1.55;
+  resize: vertical;
+}
+
+.feedback-form input:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+  border-color: var(--gold);
+  outline: 3px solid rgba(199, 151, 57, 0.18);
+}
+
+.feedback-form .button {
+  border: 0;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.form-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.thanks-main {
+  margin: 0 auto;
+  max-width: 700px;
+  min-height: 100vh;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.thanks-main img {
+  border-radius: 16px;
+  height: 82px;
+  margin-bottom: 22px;
+  width: 82px;
+}
+
 @media (max-width: 860px) {
   .site-header {
     align-items: flex-start;
@@ -388,7 +500,8 @@ footer a {
   .hero,
   .objection-band,
   .split,
-  .group-section {
+  .group-section,
+  .feedback-main {
     grid-template-columns: 1fr;
   }
 
@@ -423,6 +536,11 @@ footer a {
   }
 
   .hero-actions .button {
+    width: 100%;
+  }
+
+  .final-cta .button.ghost {
+    margin-left: 0;
     width: 100%;
   }
 
